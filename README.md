@@ -1,6 +1,6 @@
 # LaTeX Assignment Template
 
-A simple LaTeX template that I use for my homework assignments.
+A simple LaTeX template that I use for my homework assignments in my Computer Science Undergraduate courses.
 
 Modified from [this template](https://github.com/jdavis/latex-homework-template).
 Delete this `README.md` if using as a GitHub template.
