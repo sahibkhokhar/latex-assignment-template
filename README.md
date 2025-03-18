@@ -17,6 +17,12 @@ Will be updated with more commands as needed.
 2. Include `\usepackage{header}` in your LaTeX document preamble.
 3. Customize the homework details (e.g., title, due date, class) in your `.tex` file.
 
+## GitHub Template Setup
+1. Top right of this repo, click on `Use this template`
+2. Then click on `Create a new repository`.
+3. Fill in your repository name and set your options.
+4. Customize in your own repo!
+
 ## Custom Commands in `header.sty`
 
 ### Document Header Commands
@@ -44,7 +50,7 @@ These commands define the homework details displayed in the title and header/foo
 ### Inline Code
 - `\inlinecode{text}`: Formats text as inline code using a typewriter font (e.g., `\inlinecode{print(x)}` → `print(x)`).
 
-## Usage
+## Example Usage
 
 An example [`assignment.tex`](https://github.com/sahibkhokhar/latex-assignment-template/blob/main/assignment.tex) file is provided using all the commands given along with its output file in [`assignment.pdf`](https://github.com/sahibkhokhar/latex-assignment-template/blob/main/assignment.pdf).
 
