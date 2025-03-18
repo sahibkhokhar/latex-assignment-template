@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{header}[2025/02/17 Custom header package]
+\ProvidesPackage{header}[2025/03/18 Custom header package]
 
 % Document packages
 \RequirePackage{fancyhdr}
@@ -25,6 +25,7 @@
 \textwidth=6.5in
 \textheight=9.0in
 \headsep=0.25in
+\setlength{\headheight}{14.5pt}
 
 \linespread{1.1}
 
@@ -85,7 +86,7 @@
 %
 
 % Useful for algorithms
-\newcommand{\alg}[1]{\textsc{\bfseries \footnotesize #1}}
+\newcommand{\alg}[1]{\textsc{\footnotesize #1}}
 
 % For derivatives
 \newcommand{\deriv}[1]{\frac{\mathrm{d}}{\mathrm{d}x} (#1)}
@@ -97,7 +98,7 @@
 \newcommand{\dx}{\mathrm{d}x}
 
 % Alias for the Solution section header
-\newcommand{\solution}{\textbf{\large Solution}}
+\newcommand{\solution}[1][]{\vspace{1em}\textbf{\large Solution}\vspace{0.5em}\par}
 
 % Probability commands: Expectation, Variance, Covariance, Bias
 \newcommand{\E}{\mathrm{E}}
@@ -115,14 +116,13 @@
 \title{
     \vspace{2in}
     \textmd{\textbf{\hmwkClass:\ \hmwkTitle}}\\
-    \normalsize\vspace{0.1in}\small{Due\ on\ \hmwkDueDate\ at 11:59pm}\\
+    \normalsize\vspace{0.1in}\small{Due\ on\ \hmwkDueDate\ at 11:59pm}\\ % if your assignment is due at a different time, change here
     \vspace{0.1in}\large{\textit{\hmwkClassInstructor}}
     \vspace{3in}
 }
 
 % For inline code blocks
 \newcommand{\inlinecode}[1]{\texttt{#1}}
-
 
 \author{\hmwkAuthorName}
 \date{}

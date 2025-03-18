@@ -8,8 +8,9 @@ Delete this `README.md` if using as a GitHub template.
 Will be updated with more commands as needed.
 
 ## Files
-- `header.sty`: Custom LaTeX package defining document settings, headers, and commands.
-- `template.tex`: Example LaTeX document using the `header.sty` package.
+- [`header.sty`](https://github.com/sahibkhokhar/latex-assignment-template/blob/main/header.sty): Custom LaTeX package defining document settings, headers, and commands.
+- [`assignment.tex`](https://github.com/sahibkhokhar/latex-assignment-template/blob/main/assignment.tex): Example LaTeX document using the `header.sty` package.
+- [`assignment.pdf`](https://github.com/sahibkhokhar/latex-assignment-template/blob/main/assignment.pdf): Output of the `assignment.tex` file.
 
 ## Setup
 1. Place `header.sty` in the same directory as your `.tex` file.
@@ -20,11 +21,11 @@ Will be updated with more commands as needed.
 
 ### Document Header Commands
 These commands define the homework details displayed in the title and header/footer of the document:
-- `\hmwkTitle`: Sets the assignment title (default: "Assignment Title").
-- `\hmwkDueDate`: Sets the due date (default: "Due Date").
-- `\hmwkClass`: Sets the class name (default: "Class Name").
-- `\hmwkClassInstructor`: Sets the instructor's name (default: "Instructor Name").
-- `\hmwkAuthorName`: Sets the author's name (default: "Your Name").
+- `\hmwkTitle`: Sets the assignment title.
+- `\hmwkDueDate`: Sets the due date.
+- `\hmwkClass`: Sets the class name.
+- `\hmwkClassInstructor`: Sets the instructor's name.
+- `\hmwkAuthorName`: Sets the author's name.
 
 ### Problem Environment
 - `\begin{homeworkProblem}[#]` ... `\end{homeworkProblem}`: Creates a numbered problem section. Optional argument `[#]` sets the problem number manually (e.g., `\begin{homeworkProblem}[3]` starts at Problem 3).
@@ -43,30 +44,9 @@ These commands define the homework details displayed in the title and header/foo
 ### Inline Code
 - `\inlinecode{text}`: Formats text as inline code using a typewriter font (e.g., `\inlinecode{print(x)}` → `print(x)`).
 
-## Usage Example
-```latex
-\documentclass[12pt]{article}
-\usepackage{header}
+## Usage
 
-\begin{document}
-
-\renewcommand{\hmwkTitle}{Assignment 1}
-\renewcommand{\hmwkDueDate}{February 14, 2025}
-\renewcommand{\hmwkClass}{Math 101}
-\renewcommand{\hmwkClassInstructor}{Dr. Smith}
-\renewcommand{\hmwkAuthorName}{John Doe}
-
-\maketitle
-
-\begin{homeworkProblem}
-    Compute the derivative of $$ x^3 $$.
-
-    \solution
-    Using the power rule, $$ \deriv{x^3} = 3x^2 $$.
-\end{homeworkProblem}
-
-\end{document}
-```
+An example [`assignment.tex`](https://github.com/sahibkhokhar/latex-assignment-template/blob/main/assignment.tex) file is provided using all the commands given along with its output file in [`assignment.pdf`](https://github.com/sahibkhokhar/latex-assignment-template/blob/main/assignment.pdf).
 
 ## Packages Needed
 - `fancyhdr`

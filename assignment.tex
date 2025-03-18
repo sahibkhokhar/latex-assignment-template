@@ -4,19 +4,111 @@
 \begin{document}
 
 % Set your homework details here
-\renewcommand{\hmwkTitle}{Assignment 1}
-\renewcommand{\hmwkDueDate}{February 14, 2025}
+\renewcommand{\hmwkTitle}{Assignment 0}
+\renewcommand{\hmwkDueDate}{February 14, 2037} % due time can be changed in header.sty
 \renewcommand{\hmwkClass}{Class Name}
-\renewcommand{\hmwkClassInstructor}{Instructor}
-\renewcommand{\hmwkAuthorName}{Sahib Khokhar}
+\renewcommand{\hmwkClassInstructor}{Instructor Name}
+\renewcommand{\hmwkAuthorName}{Your Name}
 
 \maketitle
 
 \pagebreak
 
-% Your content goes here
 \begin{homeworkProblem}
-    Question
+    Compute the derivative of 
+    \begin{equation}
+        x^3.
+    \end{equation}
+
+    \solution{}
+
+    Using the power rule, 
+    \begin{equation}
+        \deriv{x^3} = 3x^2.
+    \end{equation}
+\end{homeworkProblem}
+
+\begin{homeworkProblem}
+    Give the pseudocode for QuickSort.
+
+    \alg{Quicksort}
+    \begin{algorithmic}[1]
+        \Procedure{Quicksort}{$A, p, r$}
+        \If{$p < r$}
+            \State{} $q = \text{Partition}(A, p, r)$
+            \State{} \Call{Quicksort}{$A, p, q-1$}
+            \State{} \Call{Quicksort}{$A, q+1, r$}
+        \EndIf{}
+        \EndProcedure{}
+    \end{algorithmic}
+\end{homeworkProblem}
+
+\begin{homeworkProblem}
+    Answer the following questions:
+    
+    \begin{enumerate}[label = (\alph*)]
+        \item Find the partial derivative of $f(x,y) = x^2y + \sin(xy)$ with respect to $x$.
+        
+        The partial derivative is:
+        \begin{equation}
+            \pderiv{x}{x^2y + \sin(xy)} = 2xy + y\cos(xy)
+        \end{equation}
+        
+        \item Evaluate the integral:
+        \begin{equation}
+            \int_0^1 3x^2 \dx
+        \end{equation}
+        
+        Using the power rule for integration:
+        \begin{equation}
+            \int_0^1 3x^2 \dx = \left[ x^3 \right]_0^1 = 1 - 0 = 1
+        \end{equation}
+        
+        \item Determine the expectation $\E[X]$ for a random variable $X$ with probability density function $f(x) = 2x$ for $0 \leq x \leq 1$.
+        
+        The expectation is:
+        \begin{equation}
+            \E[X] = \int_0^1 x \cdot 2x \dx = \int_0^1 2x^2 \dx = \left[ frac{2x^3}{3} \right]_0^1 = \frac{2}{3}
+        \end{equation}
+    \end{enumerate}
+\end{homeworkProblem}
+
+\begin{homeworkProblem}
+    Consider random variables $X$ and $Y$ with the following properties:
+    \begin{align}
+        \E[X] &= 3 \\
+        \E[Y] &= 5 \\
+        \Var[X] &= 2 \\
+        \Var[Y] &= 4 \\
+        \Cov[X,Y] &= 1
+    \end{align}
+    
+    Let $\hat{\theta}$ be an estimator for parameter $\theta$ with $\Bias[\hat{\theta}] = 0.5$.
+    
+    \solution{}
+    
+    Given the information above, we can determine:
+    
+    \begin{enumerate}
+        \item The variance of the sum $X + Y$:
+        \begin{equation}
+            \Var[X + Y] = \Var[X] + \Var[Y] + 2\Cov[X,Y] = 2 + 4 + 2(1) = 8
+        \end{equation}
+        
+        \item The covariance between $2X$ and $3Y$:
+        \begin{equation}
+            \Cov[2X, 3Y] = 2 \cdot 3 \cdot \Cov[X,Y] = 6 \cdot 1 = 6
+        \end{equation}
+        
+        \item Since $\Bias[\hat{\theta}] = 0.5$, the estimator $\hat{\theta}$ is biased. To create an unbiased estimator, we can define $\hat{\theta}_{unbiased} = \hat{\theta} - 0.5$, which would have $\Bias[\hat{\theta}_{unbiased}] = 0$.
+    \end{enumerate}
+\end{homeworkProblem}
+\begin{homeworkProblem}
+    What Python function is commonly used to print text to the console?
+    
+    \solution{}
+    
+    The Python function commonly used to print text to the console is \inlinecode{print()}.
 \end{homeworkProblem}
 
 \end{document}
